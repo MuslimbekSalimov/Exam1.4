@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<!-- Visually hidden Hammaga omad -->
+    <h1 class="visually-hidden">Hammag omad</h1>
    
     <header class="header">
         <div class="container">
@@ -21,7 +23,6 @@
                 <ul class="nav ">
                     <li class="nav__item">
                         <a class="nav__heading1" href="#">Home</a>
-                        <hr class="nav__line">
                     </li>
 
                     <li class="nav__item">
@@ -43,7 +44,7 @@
                 <div class="header__btn">
                 <a class="button__link" href="#">Get Started </a>
 
-                <button class="btn">
+                <button class="btn" type="submit">
                     <img class="btn__menu " src="./img/Menu.png" 
                       alt="menu" 
                        width="24" height="24">
@@ -78,8 +79,14 @@
                         </div>
                   </div>
 
-                <img class="hero__img" src="./img/schol.png" alt="school" 
+                  <picture>
+                    <source 
+                    type="image"
+                    src="./img/Image.png 1x, ./img/Image2@x.png 2x"
+                    >
+                    <img class="hero__img" src="./img/schol.png" alt="school" 
                     width="500" height="500">
+                  </picture>
             </div>
         </section>
 
@@ -178,7 +185,82 @@
                 </ul>
             </div>
         </section>
+
+        <section class="email">
+            <div class="container">
+                <div class="email__info">
+                    <h5 class="email__heading">Sign Up to Our Newsletter</h5>
+                    <p class="email__text">Yours could be one of them.</p>
+                    <form class="form" >
+                        <label class="label">
+                            <img class="mail" src="./img/mail.png" alt="mail">
+                          <input class="input" type="email" placeholder="Enter Your Email">
+                          <button class="email__button">Send</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__log">
+                    <a class="footer__link" href="#">
+                        <img class="footer__logo" src="./img/logo.png" alt="logojon1">
+                    </a>
+                    <p class="footer__text">Smart business</p>
+                    <p class="footer__text">Community</p>
+                </div>
+
+                <div class="footer__nav">
+                   <div class="footer__item">
+                    <h5 class="footer__h5">Resources</h5>
+                    <a class="footer__nav--link" href="#">Start Business</a>
+                    <a class="footer__nav--link" href="#">Digital Marketing</a>
+                    <a class="footer__nav--link" href="#">Course Creation</a>
+                    <a class="footer__nav--link" href="#">Business Accelerator</a>
+                   </div>
+
+                   <div class="footer__item">
+                    <h5 class="footer__h5">Mission</h5>
+                    <a class="footer__nav--link" href="#">About Digital Analyst</a>
+                    <a class="footer__nav--link" href="#">Team</a>
+                    <a class="footer__nav--link" href="#">Become a Partner</a>
+                    <a class="footer__nav--link" href="#">Privacy Policy</a>
+                   </div>
+                </div>
+
+                <div class="footer__list">
+                    <h6 class="footer__h6 footer__h5">Contact</h6>
+                    <p class="footer__text--p">041-774073</p>
+                    <p class="footer__text--p">hello@digitalanalyst.org</p>
+                    <p class="footer__text--p">Contact Form</p>
+
+
+                </div>
+            </div>
+
+            <hr class="line">
+    </footer>
+
+    <footer class="foter">
+        <div class="container">
+            <div class="footer__box">
+
+                <span class="footer__span">© 2021 DigitalAnalyst.org. A 50 non-profit organization. EIN: -3410655</span>
+
+
+                <div class="footer__div--link foter__div">
+                     <img class="footer__img" src="./img/media.png" alt="icon4" width="211" height="31">
+                     <a class="foter__link" href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     
 

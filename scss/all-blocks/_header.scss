@@ -15,7 +15,7 @@
 }
 
 .nav__heading1 {
-    color: #0082F4;
+    color:var(--color-brend);
     font-family: "Roboto";
     font-size: 20px;
     font-style: normal;
@@ -23,23 +23,42 @@
     line-height: normal;
 
     &:hover {
-        color: #000;
+        color:#000;
         transition: 0.4s ease;
     }
 }
 
-.nav__heading {
-    color: #000;
-    font-family: "Roboto";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.nav__heading1:hover::after {
+    width: 70px;
+    height: 2px;
+    background-color: #0082F4;
+    display: block;
+    content: "";
+    z-index: 1;
+    margin-top: 15px;
+    position: absolute;
+    text-align: center;
+    transition: 0.6s ease;
+}
 
-    &:hover {
-        color: #0082F4;
-        transition: 0.3s ease;
-    }
+.nav__heading:hover::after {
+    width: 70px;
+    height: 2px;
+    background-color: #0082F4;
+    display: block;
+    content: "";
+    z-index: 1;
+    margin-top: 15px;
+    position: absolute;
+    transition: 2s ease;
+    transform-origin: left;
+    transform: scaleX(1)
+}
+
+
+
+.nav__heading {
+   @include nav__heading;
 
 }
 
@@ -47,7 +66,7 @@
     padding: 15px 30px;
     border: none;
     border-radius: 6px;
-    background: #0082F4;
+    background: var(--color-brend);
 
     color: #FFF;
     font-family: "Roboto";
@@ -87,29 +106,6 @@
     display: none;
 }
 
-.nav__line {
-    max-width: 55px;
-    width: 100%;
-    position: absolute;
-    height: 1.7px;
-    background: blue;
-    margin-top: 25px;
-    border-radius: 10px;
-    animation: navline 1s ease;
-    
-    @keyframes navline {
-        from {
-            transform: translate(100% );
-            opacity: 0;
-        }
-
-        to {
-            transform: translate(0);
-            opacity: 1;
-        }
-    }
-}
-
 .line {
     max-width: 1240px;
     width: 100%;
@@ -125,6 +121,10 @@
 
     .btn {
         display: block;
+    }
+
+    .line {
+        display: none;
     }
     .btn__menu {
         display: block;
@@ -184,6 +184,10 @@
 
  @media only screen and (max-width:400px) {
     .button__link {
+        display: none;
+    }
+
+    .line {
         display: none;
     }
 
