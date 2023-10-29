@@ -1,0 +1,13 @@
+.work {
+    padding-top: 150px;
+
+    .work__info {
+        text-align: center;
+    }
+}
+
+.work__list {
+    display: flex;
+    align-items: center;
+    gap: 81px;
+}
